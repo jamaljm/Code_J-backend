@@ -75,8 +75,11 @@ WSGI_APPLICATION = "Jobber.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": 'd4h3ifipdu171p',
+        'USER': 'vdqbduaqwolcwl',
+        'PASSWORD': '9398d7bcaa59913fcd7327d34b01b5f3909bcf448a0ca77bb0251e985dd76003',
+        'HOST' : '5432',
     }
 }
 

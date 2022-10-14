@@ -19,7 +19,7 @@ class UserRegister(serializers.ModelSerializer):
         password2=self.validated_data['password2']
 
         if password != password2:
-            raise serialiazers.ValidationErro({'password':'password does not match'})
+            raise serializers.ValidationError({'password':'password does not match'})
         
         reg.set_password(password)
         reg.save()
